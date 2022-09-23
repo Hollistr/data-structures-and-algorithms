@@ -10,9 +10,9 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   const newArr = [];
-  arr.forEach((v , i) => {
+  arr.forEach((v) => {
     newArr.push(v + 1);
-  })
+  });
   return newArr;
 };
 
@@ -25,12 +25,12 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  const newArr = []
-  arr.forEach((v, i) => {
+  const newArr = [];
+  arr.forEach((v) => {
     newArr.push(v + '!');
-  })
+  });
   return newArr;
-}
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -40,12 +40,12 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  const newArr = []
-  arr.forEach((v, i) => {
-    newArr.push(v.toUpperCase);
-  })
+  const newArr = [];
+  arr.forEach((v) => {
+    newArr.push(v.toUpperCase());
+  });
   return newArr;
-}
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -57,10 +57,11 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  const newArray = [];
-  word.forEach((v, i) => {
-    newArr.push(v.toUpperCase + "!")
-  })
+  const newArr = [];
+  word.forEach((v) => {
+    newArr.push(v.toUpperCase() + '!');
+  });
+  return newArr;
 };
 
 const speaker = (words, callback) => {
@@ -92,7 +93,7 @@ const addNumbers = (num, arr, times, callback) => {
     callback(arr, num);
   }
   return arr;
-}
+};
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
@@ -113,9 +114,9 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   let inInventory = [];
-  availableItems.forEach((v, i) => {
+  availableItems.forEach((v) => {
     if (v.available) inInventory.push(v.name);
-  })
+  });
   return inInventory;
 };
 
@@ -134,9 +135,9 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
-  // Solution code here...
-};
+// const fizzbuzz = (arr) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -189,10 +190,11 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
-  const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+// xdescribe('Testing challenge 7', () => {
+//   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
-  test('It should print out messages or numbers', () => {
-    expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
-    expect(fizzbuzz(inputs).length).toStrictEqual(16);
-  });
+//   test('It should print out messages or numbers', () => {
+//     expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
+//     expect(fizzbuzz(inputs).length).toStrictEqual(16);
+//   });
+// });
