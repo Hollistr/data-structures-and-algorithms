@@ -30,7 +30,7 @@ const addExclamation = (arr) => {
     newArr.push(v + '!');
   })
   return newArr;
-
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -45,7 +45,7 @@ const allUpperCase = (arr) => {
     newArr.push(v.toUpperCase);
   })
   return newArr;
-
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -92,6 +92,7 @@ const addNumbers = (num, arr, times, callback) => {
     callback(arr, num);
   }
   return arr;
+}
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
