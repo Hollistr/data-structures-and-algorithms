@@ -62,6 +62,7 @@ const sortByChildren = (charArray) => {
   });
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -109,7 +110,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  return str.match
+  return str.match(/\b[A-Z].*?\b/gm) || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -119,7 +120,12 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let newArr = [];
+  arr.forEach((e) => {
+    let test = e.match(/^\b[A-J].*?\b/gm);
+    if (test !== null) newArr.push(test.toString());
+  });
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
